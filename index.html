@@ -1,18 +1,31 @@
-<!doctype html>
-<meta charset="utf-8">
-<title>I love you</title>
-<style>
-html,body{height:100%;margin:0}
-body{background:linear-gradient(120deg,#ff9a9e,#fad0c4);
-     display:flex;align-items:center;justify-content:center;
-     font-family:system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;}
-.message{font-size:6vw;font-weight:700;letter-spacing:0.05em;
-         animation:slide 8s linear infinite;white-space:nowrap}
-@keyframes slide{0%{transform:translateX(100%)}100%{transform:translateX(-100%)}}
-.heart{font-size:10vw;animation:pulse 1s ease-in-out infinite}
-@keyframes pulse{0%{transform:scale(.9)}50%{transform:scale(1.1)}100%{transform:scale(.9)}}
-</style>
-<div>
-  <div class="heart">❤️</div>
-  <div class="message">I love you • I love you • I love you • I love you • </div>
-</div>
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <title>I Love You 💖</title>
+  <style>
+    body {
+      background: black;
+      color: pink;
+      font-size: 40px;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+    .love {
+      position: absolute;
+      white-space: nowrap;
+      animation: move 10s linear infinite;
+    }
+    @keyframes move {
+      from { transform: translateX(100%); }
+      to { transform: translateX(-100%); }
+    }
+  </style>
+</head>
+<body>
+  <div class="love">💖 मैं तुम्हें बहुत प्यार करता हूँ 💖</div>
+  <div class="love" style="top: 60px;">💖 I LOVE YOU 💖</div>
+  <div class="love" style="top: 120px;">💖 सिर्फ तुम्हारे लिए 💖</div>
+  <div class="love" style="top: 180px;">💖 I LOVE YOU FOREVER 💖</div>
+</body>
+</html>
